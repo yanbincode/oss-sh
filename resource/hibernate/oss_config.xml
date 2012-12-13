@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- 声明方言 -->
+		<property name="dialect">org.hibernate.dialect.OracleDialect</property>
+		<!-- 是否打印SQL -->
+		<property name="show_sql">false</property>
+		<!-- 是否格式化sql -->
+		<property name="format_sql">false</property>
+		<!-- 添加实体 -->
+		<mapping class="model.OssUser"/>
+		<mapping class="model.PayInfo"/>
+		<mapping class="model.EarnInfo"/>
+		<mapping class="model.MonthRecord" />
+		<mapping class="model.YearRecord"/>
+		<mapping class="model.AccountType" />
+	</session-factory>
+</hibernate-configuration>
